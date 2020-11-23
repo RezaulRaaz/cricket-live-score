@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+}
+p{
+    margin: 0;
+}
+.body_wrapper{
+    width: 100%;
+    display:flex;
+    align-items:start;
+    justify-content:center;
+    min-height: 100vh;
+    background-color:#F1F1F1
+}
+.score{
+    margin-top:50px;
+}
+.score-nav{
+    display:flex;
+    align-items:flex-end;
+    width: 100%;
+    height: 80px;
+}
+.score-nav ul li{
+    list-style: none;
+    margin-right: 10px;
+    float: left;
+}
+.score-nav ul li a{
+    cursor: pointer;
+    border-radius:10px 10px 0 0;
+    padding:13px 30px;
+    background-color:#006442;
+    font-size: 16px;
+    text-decoration: none;
+    color:#fff;
+}
+.score-active{
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #000!important;
+    background-color:#fff!important;
+}
+.scorbody{
+    border-radius: 15px;
+    width: 1000px;
+    min-height: 500px;
+    background-color:#fff;
+}
+.score-container{
+    width: 100%;
+    padding:0 30px;
+}
+.score-row{
+    width: 100%;
+    height: 180px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.score-row:last-child{
+    border-bottom: none;
+}
+.match-studium-info{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    min-height: 180px;
+}
+.match-studium-info h5{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.live{
+    background-color: #f47320;
+    font-weight: 700;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 0;
+}
+.live::before{
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: -3px;
+    width: 40px;
+    height: 40px;
+    background:#f47320;
+    border-radius: 50%;
+    z-index: -1;
+}
+.upcoming{
+    background: green!important;
+    font-weight: 700;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 0;
+}
+.upcoming::before{
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: -3px;
+    width: 40px;
+    height: 40px;
+    background:green;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.match-studium-info p{
+    color: #f47320
+}
+
+.match-team-info{
+    width: 23%;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+}
+.match-team-info h4{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.match-team-info p{
+    font-weight: bold;
+}
+.match-team-flag{
+    width: 23%;
+    min-height: 180px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.flag{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.flag h4{
+    color: #f47320;
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.match-date{
+    min-height: 180px;
+    width: 13%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-weight: bold;
+}
+.match-result{
+    width: 50%;
+}
+.match-result-dtls{
+    padding:0 5%;
+}
+.match-result-dtls p{
+    margin-bottom: 1em;
+    font-weight: 500;
+    color: #989393;
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+}
+
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .scorbody{
+        width: 100%;
+    }
+    .score-row{
+        display: none;
+    }
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
