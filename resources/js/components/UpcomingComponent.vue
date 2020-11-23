@@ -45,6 +45,41 @@
         <p>{{ momentjs(match.date_start) }}</p>
       </div>
     </div>
+
+<!-- mobile version -->
+        <div class="mobile-row" v-for="match in Upcoming" :key="match.match_id" >
+            <div class="mobile-match-info">
+            <h5><span style="background-color: green" >Upcoming</span> {{ match.subtitle }}</h5>
+            <p class="m-live">
+              {{match.competition.title }}
+            </p>
+            <p>{{ matchStart(match.date_start) }} Local Time</p>
+            </div>
+            <div class="mobile-team">
+                <div class="mobile-team-a">
+                <h5 class="p-3">
+                   {{ match.teama.name }}
+                </h5>
+
+                </div>
+                <div class="mobile-team-a-flag">
+                <img :src="match.teama.logo_url" alt="" style="width: 40px;">
+                </div>
+                <span>VS</span>
+                <div class="mobile-team-b-flag">
+                <img :src="match.teamb.logo_url" alt="" style="width: 40px;">
+                </div>
+                <div class="mobile-team-b">
+                <h5 class="p-3">
+                   {{ match.teamb.name }}
+                </h5>
+                </div>
+            </div>
+            <p class="text-center" >
+               {{ momentjs(match.date_start) }}
+            </p>
+        </div>
+
   </div>
 </template>
 <script>
