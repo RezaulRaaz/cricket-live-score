@@ -1,5 +1,8 @@
 # Cricket Score 
 ### Demo http://www.score.adhostage.com
+
+<img src="https://github.com/RezaulRaaz/cricket-live-score/blob/master/public/frontend/img/pic2.jpg" width="30%">
+
 # about
 This is cricket score website 
  
